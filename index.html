@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando Imagem</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h2>Visualizador de Imagens</h2>
+        <p>Clique na imagem para abrir</p>
+      </header>
+      
+      <div class="img-row">
+        <div class="column">
+          <img src="beautifuldestinations.jpg" alt="Estrada Arborizada"  onclick="openImage(this);">
+        </div>
+        <div class="column">
+          <img src="hawaiianislandtimes01.jpg" alt="Praia ensolarada" onclick="openImage(this);">
+        </div>
+        <div class="column">
+          <img src="travelsvibess.jpg" alt="Baia Bela" onclick="openImage(this);">
+        </div>
+      </div>
+      
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+      </div>
+
+      <script src="script.js"></script>
+
+</body>
+</html>
